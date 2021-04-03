@@ -1,33 +1,61 @@
 body {
     background-color: #EEE;
     font-family: Helvetica, Arial, sans-serif;
-}
+    cursor: url("img/cursor2.png"), pointer;
+    height:100%;
 
+  }
+
+  html {
+    height:100%;
+
+  }
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
-    color:red;
+    color:rgb(255, 224, 85);
+
 }
 
 h1, h2, h3 {
     margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Dela Gothic One', cursive;
 }
 
 #container {
-    background-color: pink;
-    width:800px;
+ /*   background: rgb(106,0,110);
+    background: radial-gradient(circle, rgba(106,0,110,1) 0%, rgba(0,16,97,1) 100%);
+ */
+    background-image: url('img/heart.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
 
 }
+
+#contentbox {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 600px;
+    text-align: center;
+}
 #header {
-    background-color: pink;
+    background-color: #ff0077;
+
     color:teal;
     text-align: center;
     padding: 10px;
+}
+
+#header img {
+    width: 600px;
 }
 
 #content {
@@ -35,30 +63,50 @@ h1, h2, h3 {
 }
 
 #nav {
-    width: 180px;
-    float: left;
 }
 
 #nav ul {
     list-style-type: none;
+    text-align: center;
     padding: 0;
 }
 
+#nav li {
+    display:inline;
+    padding-right: 10px;
+}
+
 #main {
-    width: 600px;
-    float: right;
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 
 #footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
     clear: both;
     padding: 10px;
-    background-color: #999999;
+    background-color: #ff0077;
     color: white;
-    text-align: right;
+    text-align: center;
 }
 
 #nav .selected {
     font-weight: bold;
-    color: teal;
+    color: rgb(208, 158, 255);
 
+}
+p {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #contentbox {
+        width:100%;
+    }
+    #header img {
+        width: 100%;
+    }
 }
