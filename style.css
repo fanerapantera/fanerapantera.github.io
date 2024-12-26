@@ -3,8 +3,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     cursor: url("img/cursor2.png"), pointer;
     height:100%;
-
-  }
+    margin: 0;
+    padding: 0;
+}
 
   html {
     height:100%;
@@ -27,17 +28,14 @@ h1, h2, h3 {
 }
 
 #container {
- /*   background: rgb(106,0,110);
-    background: radial-gradient(circle, rgba(106,0,110,1) 0%, rgba(0,16,97,1) 100%);
- */
-    background-image: url('img/heart.gif');
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url('img/bg/bg5.gif');
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
-
+    overflow-x: hidden;
 }
 
 #contentbox {
@@ -88,10 +86,11 @@ h1, h2, h3 {
     bottom: 0px;
     width: 100%;
     clear: both;
-    padding: 10px;
+    padding: 10px 0;
     background-color: #ff0077;
     color: white;
     text-align: center;
+    box-sizing: border-box;
 }
 
 #nav .selected {
